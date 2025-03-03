@@ -17,13 +17,13 @@ setContentView(R.layout.activity_main)
         valetrollno = findViewById<EditText>(R.id.rollno)
         valsave = findViewById<Button>(R.id.saveBtn)
         valget = findViewById<Button>(R.id.getBtn)
-        valsharedPref = getSharedPreferences("addName", Context.MODE_PRIVATE)
+        valsharedPref = getSharedPreferences("addName", MODE_PRIVATE)
         valeditor = sharedPref.edit()
 
         save.setOnClickListener {
             editor.putString("name", etname.text.toString())
             editor.putString("rollno", etrollno.text.toString())
-            editor.apply() // Use apply() instead of commit()
+            editor.commit() 
 
             Toast.makeText(this, "Data saved", Toast.LENGTH_SHORT).show()
         }
@@ -32,7 +32,7 @@ setContentView(R.layout.activity_main)
             val myname = sharedPref.getString("name", "default value")
             val myroll = sharedPref.getString("rollno", "default value")
 
-            Toast.makeText(this, "Name: $myname --- Rollno: $myroll", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Name: "+myname" --- Rollno:" +myroll, Toast.LENGTH_SHORT).show()
         }
     }
 }
