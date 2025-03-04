@@ -1,0 +1,23 @@
+The Food Ordering System Example
+Context DFD
+A context diagram is a data flow diagram that only shows the top level, otherwise known as
+Level 0. At this level, there Is only one visible process node that represents the functions of a
+complete systern in regards to how it interacts with external entities. Some of the benefits of
+a Context Diagram are
+1. Shows the overview of the boundaries of a system
+2. No technical knowledge is required to understand with the sinple notation
+3. Simple to draw, amend and elaborate as its limited notation
+The figure below shows a context Data Flow Diagrarn that is drawn for a Food Ordering
+System. It contains a process (shape) that represents the system to nodel, in this case, the
+"Food Ordering Systern. It also shows the participants who will interact with the system,
+called the external entities. In this example, the Supplier, Kitchen, Manager, and Custormer
+are the entities who will interact with the system. in between the process and the external
+entities, there is data flow (connectaors) that indicate the existence of information exchange
+between the entities and the system. 
+
+Context DFD is the entrance of a data flow model. It contains one and only one process and
+does not show any data store.
+Level 1 DFA
+The figure below shows the level 1 DFD, which is the decomposition (e. break down) of the
+Food Ordering Systen process shown in the context DFD. Read through the diagram and
+then we will introduce some of the key concepts based on this diagram. 
